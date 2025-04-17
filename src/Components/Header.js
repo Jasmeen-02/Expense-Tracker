@@ -1,18 +1,20 @@
 import React from "react";
 import "./Header.css";
+
 const Header = () => {
   return (
-    <div>
-      <header>
-        <p className="logo">
-          <a href="#abcd#">
-            i<span style={{ color: "#3FB04B" }}>Q</span>lipse
-          </a>
-        </p>
-        <p className="items">Profile</p>
-        <p className="items">Search</p>
-        <p className="items">Home</p>
-      </header>
+    <div className="header-container">
+      <p className="logo">
+        <a href="#abcd#">
+          X<span className="highlight">p</span>ensor
+        </a>
+      </p>
+      <div className="nav-items">
+        <p className="item">Home</p>
+        <p className="item">Search</p>
+        <p className="item">History</p>
+        <p className="item">Profile</p>
+      </div>
     </div>
   );
 };

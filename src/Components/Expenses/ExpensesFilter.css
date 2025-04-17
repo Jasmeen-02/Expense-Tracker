@@ -1,6 +1,9 @@
 .expenses-filter {
   color: white;
   padding: 0 1rem;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .expenses-filter__control {
@@ -8,17 +11,54 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .expenses-filter label {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .expenses-filter select {
   font: inherit;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
   font-weight: bold;
   border-radius: 6px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.expenses-filter select:hover {
+  background-color: #f0f0f0;
+  border-color: #888;
+}
+
+.expenses-filter select:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
+}
+
+@media (max-width: 768px) {
+  .expenses-filter {
+    padding: 0 0.5rem;
+  }
+
+  .expenses-filter__control {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .expenses-filter label {
+    margin-bottom: 0.25rem;
+  }
+
+  .expenses-filter select {
+    width: 100%;
+  }
 }

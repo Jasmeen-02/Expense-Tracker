@@ -1,17 +1,17 @@
 .new-expense {
   background-color: #a892ee;
-  padding: 1.5rem;
+  padding: 2rem;
   margin: 2rem auto;
   width: 50rem;
   max-width: 95%;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2); /* Increased box shadow for better elevation */
-  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition effect on box-shadow change */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Better elevation */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
 }
 
 .new-expense:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover for elevation effect */
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
 }
 
 .new-expense button {
@@ -22,18 +22,18 @@
   background-color: #40005d;
   color: white;
   border-radius: 12px;
-  margin-right: 1rem;
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Add transition for smoother button interactions */
+  margin: 1rem 0 0.5rem 0;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transition for smooth effect */
 }
 
 .new-expense button:hover {
   background-color: #510674;
-  transform: scale(1.05); /* Slightly scale up the button on hover for a subtle effect */
+  transform: scale(1.05); /* Slightly scale button */
 }
 
 .new-expense button:active {
   background-color: #31005c;
-  transform: scale(0.95); /* Slightly scale down the button on active state */
+  transform: scale(0.95); /* Slight scale down */
 }
 
 .new-expense button.alternative {
@@ -45,11 +45,49 @@
 .new-expense button.alternative:hover {
   background-color: #ddb3f8;
   border-color: #ddb3f8;
-  transform: scale(1.05); /* Slightly scale up the button on hover for a subtle effect */
+  transform: scale(1.05);
 }
 
 .new-expense button.alternative:active {
   background-color: #d0a7f6;
   border-color: #d0a7f6;
-  transform: scale(0.95); /* Slightly scale down the button on active state */
+  transform: scale(0.95);
+}
+
+.new-expense form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.new-expense input,
+.new-expense select {
+  padding: 0.8rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 25rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.new-expense input:focus,
+.new-expense select:focus {
+  border-color: #40005d;
+}
+
+.new-expense label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  align-self: flex-start;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
