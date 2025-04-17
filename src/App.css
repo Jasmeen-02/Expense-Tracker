@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Add box-sizing to include padding and border in element's total width */
+}
+
+/* Set background color for the entire body */
+body {
+  background-color: antiquewhite;
+}
+
+/* Adjust margin for .mybody container to create space below the header */
+.mybody {
+  margin-top: 88px; /* Increased margin-top for better spacing */
+}

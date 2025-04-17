@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #b03f3f;
+}
+a:hover {
+  cursor: pointer;
+}
+header {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 66px;
+  background: #faf4f4;
+  text-align: center;
+  
+}
+p.logo {
+  position: absolute;
+  width: 198px;
+  height: 58px;
+  left: 630px;
+  margin: 0;
+  font-family: "Island Moments";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 58px;
+  /* identical to box height */
+  text-align: center;
+  color: #b03f3f;
+  transition: 1s;
+}
+header:hover {
+  box-sizing: border-box;
+  position: absolute;
+  background: #000000;
+  border: 2px solid #b03f3f;
+  transition: 0.3s;
+}
+header:hover p.logo {
+  left: 0;
+}
+p.items {
+  display: none;
+  float: right;
+  margin: 10px;
+  font-size: 27px;
+  font-family: "Caveat", cursive;
+  color: #3fb04b;
+  margin-left: 15px;
+}
+header:hover p.items {
+  display: block;
+  transition: 0.5s;
+}
